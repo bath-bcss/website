@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     url,
     images: {
-      url: "/logo.svg",
+      url: "/logo.png",
       alt: "BCSS Logo",
     },
     locale: "en_GB",
@@ -36,7 +36,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}> */}
       <body
         className={`${inter.className} flex h-screen w-full flex-col bg-zinc-100 text-black dark:bg-zinc-900 dark:text-white`}
       >

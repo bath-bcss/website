@@ -16,7 +16,7 @@ export default function Footer() {
       <p>
         View the source code on{" "}
         <a
-          href="https://github.com/bath-bcss/bcss.website"
+          href="https://github.com/bath-bcss/website"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
