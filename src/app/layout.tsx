@@ -37,7 +37,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       {/* <body className={inter.className}> */}
-      <body className={`${inter.className} flex flex-col h-screen w-full dark:bg-zinc-900 dark:text-white bg-zinc-100 text-black`}>
+      <body
+        className={`${inter.className} flex h-screen w-full flex-col bg-zinc-100 text-black dark:bg-zinc-900 dark:text-white`}
+      >
         <Header />
         {children}
         <Footer />

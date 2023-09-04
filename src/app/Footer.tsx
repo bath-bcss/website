@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center p-4">
+    <footer className="flex flex-col items-center justify-center space-y-2 p-4 text-center">
       <p>
         Website by members of{" "}
         <a
