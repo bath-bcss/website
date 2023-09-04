@@ -1,4 +1,4 @@
-# bcss-website
+# `bcss.website`
 
 The Bath Computer Science Society (BCSS) Website.
 
