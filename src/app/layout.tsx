@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url,
     images: {
       url: "/logo.png",
-      alt: "BCSS Logo",
+      alt: "",
     },
     locale: "en_GB",
   },
