@@ -28,11 +28,11 @@ const SOCIAL_LINKS: { name: string; href: string }[] = [
 <Layout title="Bath Computer Science Society">
     <div class="flex p-4 justify-center">
         <section class="flex flex-col items-center">
-            <h2 class="mb-2 text-xl font-bold">Links</h2>
+            <h2 class="mb-2 text-xl font-bold dark:text-zinc-200">Links</h2>
             <ul class="list-disc">
                 {
                     SOCIAL_LINKS.map((link) => (
-                        <li>
+                        <li class="dark:text-zinc-200">
                             <a
                                 href={link.href}
                                 class="text-lg hover:underline"

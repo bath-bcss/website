@@ -16,10 +16,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="flex flex-col h-screen bg-zinc-100">
+	<body class="flex flex-col h-screen bg-zinc-100 dark:bg-zinc-800">
 		<header class="flex flex-col items-center mt-4 mb-4">
 			<img src="/logo.svg" class="h-32 w-32" role="presentation" />
-			<h1 class="text-center text-3xl font-extrabold">
+			<h1 class="text-center text-3xl font-extrabold dark:text-zinc-200">
 				Bath Computer Science Society
 			</h1>
 		</header>
@@ -27,7 +27,7 @@ const { title } = Astro.props;
 			<slot />
 		</main>
 		<footer class="mb-4 text-center text-sm">
-			<p>
+			<p class="dark:text-zinc-300">
 				Website by members of
 				<a
 					class="hover:underline"
@@ -37,7 +37,7 @@ const { title } = Astro.props;
 					Bath Computer Science Society (BCSS)
 				</a>
 			</p>
-			<p>
+			<p class="dark:text-zinc-300">
 				View the source code on
 				<a
 					class="hover:underline"
