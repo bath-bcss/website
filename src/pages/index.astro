@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+const SOCIAL_LINKS: { name: string; href: string }[] = [
+    {
+        name: "Bath SU Website",
+        href: "https://thesubath.com/bcss/",
+    },
+    {
+        name: "Discord",
+        href: "https://discord.gg/PGvCbNSVwE",
+    },
+    { name: "GitHub", href: "https://github.com/bath-bcss" },
+    {
+        name: "Instagram",
+        href: "https://instagram.com/bathcompsci",
+    },
+    {
+        name: "Facebook",
+        href: "https://facebook.com/bathcompsci/",
+    },
+    {
+        name: "Email",
+        href: "mailto:su-bcss@bath.ac.uk",
+    },
+];
+---
+
+<Layout title="Bath Computer Science Society">
+    <div class="flex p-4 justify-center">
+        <section class="flex flex-col items-center">
+            <h2 class="mb-2 text-xl font-bold">Links</h2>
+            <ul class="list-disc">
+                {
+                    SOCIAL_LINKS.map((link) => (
+                        <li>
+                            <a
+                                href={link.href}
+                                class="text-lg hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {link.name}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </section>
+    </div>
+</Layout>
